@@ -1,7 +1,7 @@
 #!/bin/bash
 
-persion1=raji   #no space after and before =
-persion2=kittu
+persion1=$1   #no space after and before =
+persion2=$2
 
 echo "$persion1 :: hi $persion2"
 echo "$persion2 :: hello rajju"
