@@ -20,7 +20,7 @@ then   #not installed
       echo "installing mysql...:success"
     fi 
 else
-    echo "mysql already installed..."
+    echo "mysql already installed...success"
       
 fi
 #dnf install mysql -y
@@ -44,7 +44,7 @@ then
        echo "installing git...:success"
      fi
 else
-echo "git already installed...."
+echo "git already installed....success"
 fi
 
 
