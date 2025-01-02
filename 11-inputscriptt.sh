@@ -8,18 +8,17 @@ then
 exit 1 #other than 0
 fi
 dnf list installed mysql
+
 if [ $? -ne 0 ]
-   then
-
+then   #not installed
    dnf install mysql -y
-
    if [ $? -ne 0 ]
    then 
       echo "installong mysql...:failure"
-    exit 1
+      exit 1
     else
-    echo "installing mysql...:success"
-    
+      echo "installing mysql...:success"
+    fi 
 else
     echo "mysql already installed..."
       
@@ -46,7 +45,7 @@ then
      fi
 else
 echo "git already installed...."
-
+fi
 
 
 
